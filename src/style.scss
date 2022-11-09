@@ -119,11 +119,53 @@
                     border-radius: 50%;
                     object-fit: cover;
                 }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px; 
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color:lightgray;
+                    }
+                }
             }
             
         }
         .Chat{
             flex: 2;
+
+            .chatInfo{
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #5d5b8d;
+                padding: 10px;
+                color:lightgray;
+            }
+
+            .chatIcons {
+                display: flex;
+                gap: 10px;
+
+                img{
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+            .messages{
+                background-color: #ddddf7;
+                padding: 10px;
+                height: calc(100% - 160px);
+            }
+
+            .input{
+                background-color: white;
+                height: 50px;
+                padding: 10px;
+            }
         }
 
         .Navbar {

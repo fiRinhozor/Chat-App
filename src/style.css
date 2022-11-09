@@ -189,10 +189,60 @@
      object-fit: cover;
 }
 
+.home .container .Sidebar .userChat .userChatInfo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home .container .Sidebar .userChat .userChatInfo p {
+  font-size: 14px;
+  color: lightgray;
+}
+
 .home .container .Chat {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.home .container .Chat .chatInfo {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #5d5b8d;
+  padding: 10px;
+  color: lightgray;
+}
+
+.home .container .Chat .chatIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.home .container .Chat .chatIcons img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.home .container .Chat .messages {
+  background-color: #ddddf7;
+  padding: 10px;
+  height: calc(100% - 160px);
+}
+
+.home .container .Chat .input {
+  background-color: white;
+  height: 50px;
+  padding: 10px;
 }
 
 .home .container .Navbar {
