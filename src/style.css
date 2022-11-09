@@ -237,12 +237,141 @@
   background-color: #ddddf7;
   padding: 10px;
   height: calc(100% - 160px);
+  overflow-y: scroll;
+}
+
+.home .container .Chat .messages .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.home .container .Chat .messages .message .messageInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: gray;
+  font-weight: 300;
+}
+
+.home .container .Chat .messages .message .messageInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .container .Chat .messages .message .messageContent {
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.home .container .Chat .messages .message .messageContent p {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 0 10px 10px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.home .container .Chat .messages .message .messageContent img {
+  width: 50%;
+}
+
+.home .container .Chat .messages .message.owner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.home .container .Chat .messages .message.owner .messageContent {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.home .container .Chat .messages .message.owner .messageContent p {
+  background-color: #7b96ec;
+  color: white;
+  border-radius: 10px 0 10px 10px;
 }
 
 .home .container .Chat .input {
   background-color: white;
   height: 50px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .container .Chat .input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  font-size: 18px;
+}
+
+.home .container .Chat .input input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.home .container .Chat .input input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+.home .container .Chat .input input::-ms-input-placeholder {
+  color: lightgray;
+}
+
+.home .container .Chat .input input::placeholder {
+  color: lightgray;
+}
+
+.home .container .Chat .input .send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.home .container .Chat .input .send img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.home .container .Chat .input .send button {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  background-color: #8da4f1;
 }
 
 .home .container .Navbar {
