@@ -130,11 +130,18 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .home .container {
+    width: 90%;
+  }
+}
+
 .home .container .Sidebar {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   background-color: #3e3c61;
+  position: relative;
 }
 
 .home .container .Sidebar .search {
@@ -416,5 +423,12 @@
   font-size: 10px;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .home .container .Navbar .user button {
+    position: absolute;
+    bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
